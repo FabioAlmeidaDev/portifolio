@@ -3,7 +3,7 @@ import "./style.scss";
 import {Rating} from "../StarRating/Rating";
 import {OverlayTrigger,Tooltip } from 'react-bootstrap';
 
-export const TechTile = (props:{src:string, label:string, rating:number, showRating:boolean, size:string}) =>{
+export const TechTile = (props:{src:string, label:string, rating?:number, showRating?:boolean, size?:string}) =>{
     const {src, label, rating, showRating=true, size="normal"} = props;
     const ratingJSX = showRating && rating? 
                 <div className="tech-tile-knowledge-level">

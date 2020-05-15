@@ -8,8 +8,13 @@ body{
   background-attachment: fixed;
   
 }
+main{
+  width:100%;
+}
 .flex-container{
   display: inline-flex;
+  flex-wrap: wrap;
+
   
 }
 .navigation-bar{
@@ -17,7 +22,8 @@ body{
   top:0px;
   display: block;
   width:100%;
-  background-color: $mainBackgroundColor;;
+  background-color: $mainBackgroundColor;
+  z-index: 10000;
 }
 .main-container{
   background-color:white;
@@ -38,3 +44,19 @@ body{
   margin-right:auto;
 }
 
+.center-horizontally{
+  b{
+    color:rgb(255, 204, 0);
+  }
+}
+.container-fluid{
+  padding:0px;
+}
+.container-fluid.highlighted{
+  background-color:#EFEFEF;
+  padding:1.5em 0em 3em 0em;
+  margin:1.5em 0px 0px 0px;
+  .section-title .inner {
+    margin-top:0px;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import classname from "classname";
+import classname from "classnames";
 import "./style.scss";
 
 export const CodeItem = (props:any) => {

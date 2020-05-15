@@ -8,7 +8,7 @@ export const Project =(props:any)=>{
 
     return(
         <div className="project-container">
-            <div className="project-image-tech">
+            <div className="project-image-tech d-xs-none">
                 <div className="project-image">
                     <img src={imageSrc}/>
                 </div>
@@ -37,6 +37,5 @@ const buildTechStack =(techStack:[{src:string,label:string}])=>{
             {techStackArray}
         </div>  
     </div> : "";
-    console.log("TECH STACK", techStack, techStackArray)
     return techStackContainer;
 }

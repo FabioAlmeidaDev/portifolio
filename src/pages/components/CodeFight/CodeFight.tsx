@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import classname from "classname";
+import classname from "classnames";
 import {CodeItem} from "./CodeItem";
 export const CodeFight = (props:any) =>{
 
@@ -26,10 +26,7 @@ export const CodeFight = (props:any) =>{
 A 1-interesting polygon is just a square with a side of length 1. An n-interesting polygon is obtained by taking the n - 1-interesting polygon and appending 1-interesting polygons to its rim, side by side. You can see the 1-, 2-, 3- and 4-interesting polygons in the picture below.
             </CodeItem>
              
-            <div>
-               https://app.codesignal.com/profile/fabioalmeida
-
-            </div>
+ 
         </div>
     )
 }

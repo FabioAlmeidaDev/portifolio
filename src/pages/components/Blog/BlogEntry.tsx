@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import classname from "classname";
+import classname from "classnames";
 
 export const BlogEntry = (props:any) =>{
     const {url,title, "img-src":imgSrc} = props;
