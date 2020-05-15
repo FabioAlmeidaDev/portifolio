@@ -1,0 +1,40 @@
+$mainBackgroundColor: white;
+
+body{
+  background-color: #DDD;
+  background: url("./images/portraits/IMG_0827.JPG") no-repeat;
+  background-position: top left;
+  background-size: cover ;
+  background-attachment: fixed;
+  
+}
+.flex-container{
+  display: inline-flex;
+  
+}
+.navigation-bar{
+  position:fixed ;
+  top:0px;
+  display: block;
+  width:100%;
+  background-color: $mainBackgroundColor;;
+}
+.main-container{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.inline-flex{
+  display: inline-flex;
+}
+.center{
+  width: fit-content;
+  align-self: center;
+}
+.center-horizontally{
+  margin-left:auto;
+  margin-right:auto;
+}
+
