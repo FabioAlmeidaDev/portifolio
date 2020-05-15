@@ -25,10 +25,10 @@ export const Project =(props:any)=>{
     )
 }
 
-const buildTechStack =(techStack:[{src:string,label:string}])=>{
+const buildTechStack =(techStack:[{src:string,label?:string, tooltip?:string}])=>{
     const techStackArray = [];
     for(let i=0; i < techStack.length; i++){
-        techStackArray.push(<TechTile key={i} src={techStack[i].src} label={techStack[i].label} size="x-small"/>);
+        techStackArray.push(<TechTile key={i} src={techStack[i].src} label={techStack[i].label} tooltip={techStack[i].tooltip} size="x-small"/>);
     }
     const techStackContainer = techStackArray.length > 0 ? 
     <div>

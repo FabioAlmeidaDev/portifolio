@@ -3,8 +3,8 @@ import "./style.scss";
 import {Rating} from "../StarRating/Rating";
 import {OverlayTrigger,Tooltip } from 'react-bootstrap';
 
-export const TechTile = (props:{src:string, label:string, rating?:number, showRating?:boolean, size?:string}) =>{
-    const {src, label, rating, showRating=true, size="normal"} = props;
+export const TechTile = (props:{src:string, label?:string, tooltip?:string, rating?:number, showRating?:boolean, size?:string}) =>{
+    const {src, label, rating, showRating=true, size="normal", tooltip = false} = props;
     const ratingJSX = showRating && rating? 
                 <div className="tech-tile-knowledge-level">
                     <Rating rating={rating}/>
@@ -12,7 +12,9 @@ export const TechTile = (props:{src:string, label:string, rating?:number, showRa
                 :
                 "";
 
+    const renderedLabel = label ? <div className="tech-tile-label">{label}</div> : "";
     return (
+        tooltip ? 
         <div className={`tech-tile ` + size}>
             <div className="tech-tile-image">
             <OverlayTrigger
@@ -20,17 +22,23 @@ export const TechTile = (props:{src:string, label:string, rating?:number, showRa
                 placement="bottom"
                 overlay={
                 <Tooltip id={`tooltip-bottom`}>
-                    {label}
+                    {tooltip}
                 </Tooltip>
                 }
             > 
-               <img src={src} alt={label}/>
+               <img src={src} alt={label} className="pointer"/>
             </OverlayTrigger>
             </div>
-            <div className="tech-tile-label">
-                {label}
-            </div>
+            {renderedLabel}
             {ratingJSX}
         </div>
+        :
+        <div className={`tech-tile ` + size}>
+            <div className="tech-tile-image">
+               <img src={src} alt={label}/>
+            </div>
+            {renderedLabel}
+            {ratingJSX}
+        </div>       
     )
 }

@@ -20,13 +20,19 @@ function App() {
       <nav className="navigation-bar">
         <ul>
           <li>
-            <Link to="/">What I know</Link>
+            <a href="#what_i_know">What I know</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+          <a href="#projects">Projects</a>
           </li>
           <li>
-            <Link to="/users">Users</Link>
+          <a href="#github">GitHub</a>
+          </li>
+          <li>
+          <a href="#aboutme">About Me</a>
+          </li>
+          <li>
+          <a href="#timeline">Timeline</a>
           </li>
         </ul>
       </nav>

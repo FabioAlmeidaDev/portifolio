@@ -1,4 +1,7 @@
 $mainBackgroundColor: white;
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   background-color: #DDD;
@@ -18,12 +21,34 @@ main{
   
 }
 .navigation-bar{
-  position:fixed ;
+  position: fixed;
   top:0px;
+  box-shadow: 0px 0.5px 2px 2px rgba(0,0,0,0.25);
   display: block;
   width:100%;
   background-color: $mainBackgroundColor;
   z-index: 10000;
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    padding:0px;
+    margin:0px;
+    li{
+      display: inline-flex;
+      a{
+        text-decoration: none;
+        width:100%;
+        height:100%;
+        padding:1em;
+
+        display: flex;
+        &:hover{
+          background-color: #EEE;
+        }
+      }
+     
+    }
+  }
 }
 .main-container{
   background-color:white;
@@ -45,9 +70,12 @@ main{
 }
 
 .center-horizontally{
-  b{
-    color:rgb(255, 204, 0);
+  &.timeline{
+    b{
+      color:rgb(255, 204, 0);
+    }
   }
+
 }
 .container-fluid{
   padding:0px;
