@@ -13,6 +13,9 @@ import { GitHub } from './components/GitHub/GitHub';
 import { Principles } from './components/Principles/Principles';
 import { Footer } from './components/Footer/Footer';
 import { ScrollArrows } from './components/ScrollArrows/ScrollArrows';
+
+import {projects} from "../data/projects";
+
 export const Home = () => {
     return(
         <div className="main" >
@@ -52,100 +55,25 @@ export const Home = () => {
 
                 <SectionTitle label="Here are a few projects I've worked on" id="projects"/>
                 <div className="col-sm-9 center" >
-                    <Project 
-                        title="Component Library" 
-                        company="GE Healthcare, CDx"
-                        image-src="./project-images/component-library.png" 
-                        date="Since May 2019" 
-                        role="Front-End Software Engineer"
-                        tech-stack={
-                            [
-                                {tooltip:"Typescript",src:"./logos/typescript.png"},
-                                {tooltip:"Javascript",src:"./logos/javascript.png"},
-                                {tooltip:"ReactJS",src:"./logos/react.png"},
-                                {tooltip:"CSS3",src:"./logos/css3.png"},
-                                {tooltip:"HTML",src:"./logos/html5.png"},
-                            ]}>
-                        <p>A project targeting to develop and deliver a ready-to-use library of UI components, leveraging GEHC CDx's design system. These components are used by front end developers to create high fidelity UI and UX as outlined by the User Experience team</p>
-                    </Project>
- 
- 
-                    <Project 
-                        title="SmartTriage" 
-                        role="Full Stack Software Engineer"
-                        date="September 2016 - May 2019" 
-                        company="GE Healthcare, Global Services Technology"
-                        image-src="./project-images/smarttriage.jpg" 
-                        tech-stack={
-                            [
-                                {tooltip:"Python",src:"./logos/python.png"},
-                                {tooltip:"Solr",src:"./logos/solr.png"},
-                                {tooltip:"Spark",src:"./logos/spark.png"},
-                                {tooltip:"Javascript",src:"./logos/javascript.png"},
-                                {tooltip:"Angular",src:"./logos/angular.png"},
-                                {tooltip:"CSS3",src:"./logos/css3.png"},
-                                {tooltip:"HTML",src:"./logos/html5.png"},
-                                {tooltip:"Java",src:"./logos/java.png"},
-                                {tooltip:"MongoDB",src:"./logos/mongodb.png"},
-                            ]}>
-                        <p>A project targeting to develop and deliver a ready-to-use library of UI components, leveraging GEHC CDx's design system. These components are used by front end developers to create high fidelity UI and UX as outlined by the User Experience team</p>
-                    </Project>
                     
-                    
-                    <Project 
-                        title="Find an Expert" 
-                        company="GE Healthcare, Global Services Technology"
-                        image-src="./project-images/fae.jpg" 
-                        date="March 2016 - September 2016" 
-                        role="Full Stack Software Engineer"
-                        tech-stack={
-                            [
-                                {tooltip:"Java",src:"./logos/java.png"},
-                                {tooltip:"Angular",src:"./logos/angular.png"},
-                                {tooltip:"CSS3",src:"./logos/css3.png"},
-                                {tooltip:"HTML",src:"./logos/html5.png"},
-                                {tooltip:"OracleDB",src:"./logos/oracle.png"},
-                            ]}>
-                        <p>A project targeting to develop and deliver a ready-to-use library of UI components, leveraging GEHC CDx's design system. These components are used by front end developers to create high fidelity UI and UX as outlined by the User Experience team</p>
-                    </Project>
-                    
-                    
-                    <Project 
-                        title="SynerGE CRM" 
-                        company="GE Healthcare, Global Services Technology"
-                        image-src="./project-images/synerge.png" 
-                        date="March 2015 - September 2016" 
-                        role="Front-End Software Engineer"
-                        tech-stack={
-                            [
-                                {tooltip:"Angular",src:"./logos/angular.png"},
-                                {tooltip:"Javascript",src:"./logos/javascript.png"},
-                                {tooltip:"HTML",src:"./logos/html5.png"},
-                                {tooltip:"CSS",src:"./logos/css3.png"},
-                                {tooltip:"Java",src:"./logos/java.png"},
-                                {tooltip:"OracleDB",src:"./logos/oracle.png"},
-                            ]}>
-                        <p>A project targeting to develop and deliver a ready-to-use library of UI components, leveraging GEHC CDx's design system. These components are used by front end developers to create high fidelity UI and UX as outlined by the User Experience team</p>
-                    </Project>
-                    
-                    
-                    <Project 
-                        title="FE Homepage" 
-                        company="GE Healthcare, Americas"
-                        image-src="./project-images/fehomepage.jpg" 
-                        date="November 2012 - April 2015" 
-                        role="Front-End Software Engineer"
-                        tech-stack={
-                            [
-                                {tooltip:"HTML",src:"./logos/html5.png"},
-                                {tooltip:"CSS3",src:"./logos/css3.png"},
-                                {tooltip:"Javascript",src:"./logos/javascript.png"},
-                                {tooltip:"Java",src:"./logos/java.png"},
-                                {tooltip:"Oracle",src:"./logos/oracle.png"},
-                            ]}>
-                        <p>A project targeting to develop and deliver a ready-to-use library of UI components, leveraging GEHC CDx's design system. These components are used by front end developers to create high fidelity UI and UX as outlined by the User Experience team</p>
-                    </Project>
-               </div>
+                    {projects.map((value,index) => {
+                        return (
+                            <Project 
+                                title={value.name} 
+                                company={value.company}
+                                image-src={value["image-src"]} 
+                                date={value.date} 
+                                role={value.role}
+                                tech-stack={value.techStack}>
+                                <p>{value.description}</p>
+                                <p>{value.problem}</p>
+                                <p>{value.action}</p>
+                                <p>{value.result}</p>
+                            </Project>        
+                         )}
+                   )}
+
+              </div>
 
                <div className="container-fluid highlighted">
                     <SectionTitle label="Take a look at this code on GitHub </> " id="github"/>
