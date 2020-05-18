@@ -17,7 +17,7 @@ import { ScrollArrows } from './components/ScrollArrows/ScrollArrows';
 import {getProject} from "../data/projects";
 import "./Project.style.scss";
 
-const getMedia=(data:{src:string, type:string, description?:string}[]|undefined)=>{
+const getMedia=(data:{src:string, type:string, description?:string, width?:string|number}[]|undefined)=>{
     if(!data) return "";
     if(data.length > 0){
         let output = [];
@@ -38,7 +38,10 @@ const getMedia=(data:{src:string, type:string, description?:string}[]|undefined)
             if(data[i].type === "image"){
                 item = (
                     <div className="project-media-container">
-                        <img src={data[i].src} width="320"/>
+                        <a className="clickable-image-container" href={data[i].src} target="_blank">
+                            <img src={data[i].src} width={data[i].width || "320"}/>
+                            <img src="./click-me.png" className="clickable-image"/>
+                        </a>
                         <div className="project-media-description">{data[i].description}</div>
                     </div>
                 ); 

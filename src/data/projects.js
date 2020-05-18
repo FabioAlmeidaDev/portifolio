@@ -18,7 +18,13 @@ export const projects = [
         "result":"As a project in development, metrics are not available but it is expected to create a better developer experience, bridging the gap between development and user experience teams as well as better maintainability and reusability via dependency consumption / distribution.",
         "metrics":"",
         "media":[
-            {src:"",type:""},
+            {src:"project-images/cdxlib/cdxlib_1.png",type:"image", description:"Button component with configurable options"},
+            {src:"project-images/cdxlib/cdxlib_2.png",type:"image", description:"Button component with accessibility assessment"},
+            {src:"project-images/cdxlib/cdxlib_3.png",type:"image", description:"Button component with code example"},
+            {src:"project-images/cdxlib/cdxlib_4.png",type:"image", description:"Input component with configurable options"},
+            {src:"project-images/cdxlib/cdxlib_5.png",type:"image", description:"Input component wuth code examples"},
+            {src:"project-images/cdxlib/cdxlib_6.png",type:"image", description:"Card component"},
+            {src:"project-images/cdxlib/cdxlib_7.png",type:"image", description:"Card component with code examples"}
         ]
 
    },
@@ -43,7 +49,18 @@ export const projects = [
     "problem":"With the influx of new remote engineers being hired along with the number of 30+ years engineers retiring, lack of experience becomes an issue. Looking through service records, syphoning throw error logs and going through documentation adds up to the time it takes to troubleshoot each call.",
     "action":"I came into SmartTriage as the initial prototyper. I was given an idea to run with, making all the infra-structure decisions as well as dev stack and  data approaches. After the full functional initial prototype was created and went on to become a product, I took on the role of lead developer  (front and backend) as well as functional product owner for the following two years, working with the contracted data analysts, GE’s data analytics team and CRM teams to integrate the features with their products.<br/>During this period I went on to become machine learning certified with Apache Spark to better understand and help the team with prediction accuracy issues.",
     "result":"SmartTriage resulted in a $10 million VCP for the business in its first year of release, by helping remote engineers work their calls faster, cutting down on troubleshooting steps and automating most manual steps. The accuracy of its predictions along with preemptive error log parsing leaves less room for human errors, saving the business time and money.",
-    "metrics":""
+    "metrics":"",
+    "media":[
+        {src:"project-images/smarttriage/st_1.png",type:"image", description:"SmartTriage Main screen with recommendations"},
+        {src:"project-images/smarttriage/st_2.png",type:"image", description:"SmartTriage Main screen with Service Procedure"},
+        {src:"project-images/smarttriage/st_3.png",type:"image", description:"SmartTriage Main screen with log parser"},
+        {src:"project-images/smarttriage/st_4.png",type:"image", description:"SmartTriage log parser full view"},
+        {src:"project-images/smarttriage/st_5.png",type:"image", description:"SmartTriage Main screen with log search"},
+        {src:"project-images/smarttriage/st_6.png",type:"image", description:"SmartTriage symptom in another language"},
+        {src:"project-images/smarttriage/st_7.png",type:"image", description:"SmartTriage with notification"},
+        {src:"project-images/smarttriage/st_8.png",type:"image", description:"SmartTriage with selected options"}
+        
+    ]
 
 },
 {
