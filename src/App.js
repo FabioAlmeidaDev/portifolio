@@ -35,25 +35,25 @@ function App() {
     }
   }
   return (
-  <Router  basename={process.env.PUBLIC_URL}>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <nav className="navigation-bar">
         {backbutton()}
         <ul>
           <li>
-            <a href="#what_i_know">What I know</a>
+            <a href="/#what_i_know">What I know</a>
           </li>
           <li>
-          <a href="#projects">Projects</a>
+          <a href="/#projects_list">Projects</a>
           </li>
           <li>
-          <a href="#github">GitHub</a>
+          <a href="/#github">GitHub</a>
           </li>
           <li>
-          <a href="#aboutme">About Me</a>
+          <a href="/#aboutme">About Me</a>
           </li>
           <li>
-          <a href="#timeline">Timeline</a>
+          <a href="/#timeline">Timeline</a>
           </li>
         </ul>
       </nav>

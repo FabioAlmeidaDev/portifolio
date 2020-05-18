@@ -17,7 +17,7 @@ import { ScrollArrows } from './components/ScrollArrows/ScrollArrows';
 
 import {projects} from "../data/projects";
 
-export const Home = () => {
+export const Home = (props:any) => {
     return(
         <div className="main with-bkg" id="introduction">
             <Introduction name="Fabio Almeida" message="a full stack software developer"/>
@@ -54,7 +54,7 @@ export const Home = () => {
                         <Principles className="col-sm-8 col-xs-12 center-horizontally" />
                 </div>
 
-                <SectionTitle label="Here are a few projects I've worked on"  id="projects"/>
+                <SectionTitle label="Here are a few projects I've worked on"  id="projects_list"/>
                 <div className="col-sm-9 center" >
                     
                     {projects.map((value,index) => {
@@ -69,7 +69,7 @@ export const Home = () => {
                                     role={value.role}
                                     tech-stack={value.techStack}>
                                     <p className="project-description-paragraph">{value.description}</p>
-                                    <a href={`${process.env.PUBLIC_URL}/projects?id=${index}`}>Click to see details and my roles for this project</a>
+                                    <a href={`${process.env.PUBLIC_URL}/projects?id=${index}`}>Click to see details and my role for this project</a>
                                 </Project> 
                             </div>       
                          )}
