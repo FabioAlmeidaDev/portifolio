@@ -41,7 +41,7 @@ const getMedia=(data:{src:string, type:string, description?:string}[]|undefined)
                         <img src={data[i].src} width="320" height="240"/>
                         <div className="project-media-description">{data[i].description}</div>
                     </div>
-                );
+                ); 
             }
 
             if(!!item) output.push(item);
