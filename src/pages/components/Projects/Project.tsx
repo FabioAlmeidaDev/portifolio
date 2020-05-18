@@ -3,11 +3,11 @@ import {TechTile} from "../TechTile/TechTile";
 import "./style.scss";
 
 export const Project =(props:any)=>{
-    const {title, role, date, "image-src":imageSrc,company, companyLogo, "tech-stack":techStack=[], children} = props;
+    const {title, role, date, "image-src":imageSrc,company, companyLogo, "tech-stack":techStack=[], children, id} = props;
 
-
+    
     return(
-        <div className="project-container">
+        <div className="project-container" id={id}>
             <div className="project-image-tech d-xs-none">
                 <div className="project-image">
                     <img src={imageSrc}/>

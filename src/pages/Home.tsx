@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import {Link} from "react-router-dom";
 
 // Components
 import {Introduction} from "./components/Introduction/Introduction";
@@ -18,8 +19,8 @@ import {projects} from "../data/projects";
 
 export const Home = () => {
     return(
-        <div className="main" >
-            <Introduction name="Fabio Almeida" message="a full stack software developer" className="anchor" id="introduction"/>
+        <div className="main with-bkg" id="introduction">
+            <Introduction name="Fabio Almeida" message="a full stack software developer"/>
             <div className="main-container container-fluid">
                 <Education id="what_i_know" className="anchor"/>
                 
@@ -53,23 +54,24 @@ export const Home = () => {
                         <Principles className="col-sm-8 col-xs-12 center-horizontally" />
                 </div>
 
-                <SectionTitle label="Here are a few projects I've worked on" id="projects"/>
+                <SectionTitle label="Here are a few projects I've worked on"  id="projects"/>
                 <div className="col-sm-9 center" >
                     
                     {projects.map((value,index) => {
                         return (
-                            <Project 
-                                title={value.name} 
-                                company={value.company}
-                                image-src={value["image-src"]} 
-                                date={value.date} 
-                                role={value.role}
-                                tech-stack={value.techStack}>
-                                <p>{value.description}</p>
-                                <p>{value.problem}</p>
-                                <p>{value.action}</p>
-                                <p>{value.result}</p>
-                            </Project>        
+                            <div>
+                                <a id={`project-id-${index}`} className="project-item-anchor"/>
+                                <Project 
+                                    title={value.name} 
+                                    company={value.company}
+                                    image-src={value["image-src"]} 
+                                    date={value.date} 
+                                    role={value.role}
+                                    tech-stack={value.techStack}>
+                                    <p className="project-description-paragraph">{value.description}</p>
+                                    <a href={`/projects?id=${index}`}>Click to see details and my role for this project</a>
+                                </Project> 
+                            </div>       
                          )}
                    )}
 

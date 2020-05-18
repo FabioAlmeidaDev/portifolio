@@ -1,5 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 
 import {
   BrowserRouter as Router,
@@ -12,12 +14,31 @@ import './App.scss';
 
 // Pages
 import {Home} from './pages/Home.tsx';
+import {Projects} from './pages/Projects.tsx';
 
 function App() {
+  const backbutton = () =>{
+    const loc = window.location.href;
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    if(loc.indexOf("/projects") > -1){
+      return (
+        <div className="home-button">
+          <a href={`/#project-id-${urlParams.get("id")}`}>
+            <FontAwesomeIcon icon={faHome} /> Home
+          </a>
+        </div>
+      )
+    }else{
+      return "";
+    }
+  }
   return (
     <Router>
     <div>
       <nav className="navigation-bar">
+        {backbutton()}
         <ul>
           <li>
             <a href="#what_i_know">What I know</a>
@@ -40,8 +61,8 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/about">
-          <Home />
+        <Route path="/projects">
+          <Projects />
         </Route>
         <Route path="/users">
           <Home />

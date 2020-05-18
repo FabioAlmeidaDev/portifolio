@@ -55,4 +55,26 @@
         margin-top:1.5em;
         font-size:0.9em;
     }
+
+    .project-par{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        div{
+            margin-bottom:10px;
+        }
+        .project-problem{
+            flex:1;
+        }
+        .project-action{
+            flex:2;
+        }
+        .project-result{
+            flex:1;
+        }
+    }
+    .project-description-paragraph{
+        border-left:3px solid #DDD;
+        padding-left:2em;
+    }
 }
