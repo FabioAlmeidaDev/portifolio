@@ -69,7 +69,7 @@ export const Home = () => {
                                     role={value.role}
                                     tech-stack={value.techStack}>
                                     <p className="project-description-paragraph">{value.description}</p>
-                                    <a href={`/projects?id=${index}`}>Click to see details and my role for this project</a>
+                                    <a href={`${process.env.PUBLIC_URL}/projects?id=${index}`}>Click to see details and my roles for this project</a>
                                 </Project> 
                             </div>       
                          )}
