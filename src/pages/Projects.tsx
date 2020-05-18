@@ -26,7 +26,7 @@ const getMedia=(data:{src:string, type:string, description?:string}[]|undefined)
             if(data[i].type === "video"){
                  item = (
                      <div className="project-media-container">
-                        <video width="320" height="240" controls>
+                        <video width="320" controls>
                             <source src={data[i].src} type="video/mp4"/>
                             <source src={data[i].src} type="video/ogg"/>
                             Your browser does not support the video tag.
@@ -38,7 +38,7 @@ const getMedia=(data:{src:string, type:string, description?:string}[]|undefined)
             if(data[i].type === "image"){
                 item = (
                     <div className="project-media-container">
-                        <img src={data[i].src} width="320" height="240"/>
+                        <img src={data[i].src} width="320"/>
                         <div className="project-media-description">{data[i].description}</div>
                     </div>
                 ); 

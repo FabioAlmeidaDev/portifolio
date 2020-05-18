@@ -63,7 +63,17 @@ export const projects = [
     "problem":"The process for customers to request service on their equipment is multi-step and lengthy routing every call through call centers, remote engineers and finally field service engineer. In addition the manual investigation steps to decide to dispatch a call, and the search through several databases to find out who is the best trained field engineer to take that call is time consuming.",
     "action":"As a solo full stack developer, paired with a User experience designer,   I had the opportunity to work on all facet of this product  from  its original idea to product ready phase. My ability to always stay current with the technologies available allowed me to introduced two major changes to our development stack going from angular 1.4 to 2.0 and machine learning trained on service history and training data to find the best field engineer for the job. <br/> Since this was a solo development job, the ability to multitask, organize and see the bigger picture were essential to see this project through the finish line.",
     "result":"Find An Expert helped avoid the average 30min per customer onhold time on service calls by pre-triaging and connecting the customer immediately with an expert in their equipment around their area.",
-    "metrics":""
+    "metrics":"",
+    "media":[
+        {src:"project-images/fae/fae.mov",type:"video"},
+        {src:"project-images/fae/fae_1.png",type:"image"},
+        {src:"project-images/fae/fae_2.png",type:"image"},
+        {src:"project-images/fae/fae_3.png",type:"image"},
+        {src:"project-images/fae/fae_4.png",type:"image"},
+        {src:"project-images/fae/fae_5.png",type:"image"},
+        {src:"project-images/fae/fae_6.png",type:"image"},
+        {src:"project-images/fae/fae_7.png",type:"image"},
+    ]
 
 },
 {
