@@ -30,4 +30,15 @@ $sectionTitleColor: #777;
       }
     }
   
-  } 
+  }
+
+  @media screen and (max-width: 600px) {
+    .section-title{
+      margin: 0 1rem;
+      .inner {
+        &:before, &:after{
+          display: none;
+        }        
+      }
+    }
+  }
