@@ -9,7 +9,7 @@ export const Footer = (props:{children?:any, className?:string}) => {
     return (
         <div className={classname("footer", className)}>
             <div>
-                Lets connect. I prefer <b>emails</b> and <b>linedIn messages</b>.
+                Lets connect. I prefer <b>emails</b> and <b>linkedIn messages</b>.
             </div>
             <div className="footer-social-media-container">
             <a href="mailto: fabiokpoeira@gmail.com" target="_blank" className="footer-tile">

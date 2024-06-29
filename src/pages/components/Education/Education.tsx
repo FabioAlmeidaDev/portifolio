@@ -12,6 +12,9 @@ export const Education = (props:any) =>{
                 <FontAwesomeIcon icon={faGraduationCap} />
                 <span>Bachelors of Computer Engineering, <i>4.0 GPA</i></span>
             </div>
+            <div>
+                <span>Valedictorian</span>
+            </div>
             <div className="education-secondary">
                 and I can speak <b>Portuguese</b> and <b>English</b> fluently
             </div>

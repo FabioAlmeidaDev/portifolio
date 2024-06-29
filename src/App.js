@@ -47,9 +47,6 @@ function App() {
           <a href="/#projects_list">Projects</a>
           </li>
           <li>
-          <a href="/#github">GitHub</a>
-          </li>
-          <li>
           <a href="/#aboutme">About Me</a>
           </li>
           <li>

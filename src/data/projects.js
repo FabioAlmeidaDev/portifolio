@@ -1,5 +1,119 @@
 export const projects = [
     {
+        "name":"Healthcare Claims",
+        "company":"Fidelity Healthcare",
+        "image-src":"./project-images/claims.png",
+        "date":"July 2020 - Current",
+        "role":"Principal Software Engineer (Tech Lead)",
+        "techStack":[
+                {"tooltip":"Javascript","src":"./logos/vuejs.png"},
+                {"tooltip":"Javascript","src":"./logos/graphql.png"},
+                {"tooltip":"Javascript","src":"./logos/javascript.png"},
+                {"tooltip":"Javascript","src":"./logos/typescript.png"},
+                {"tooltip":"CSS3","src":"./logos/html5.png"},
+                {"tooltip":"CSS3","src":"./logos/css3.png"},
+            ],
+        "description":"A web-based platform designed for account holders managed by Fidelity, enabling them to access and manage their medical claims efficiently.",
+        "problem":"Client deliverable",
+        "action":"Served as a technical lead for a team of five developers, focusing on ensuring code quality, reusability, and reliability. Led the project in an agile environment, maintaining continuous communication with Business Analysts, User Experience Designers, and fellow Developers. ",
+        "result":"A full fledged healthcare claim management system using graphql, vuejs, html and scss",
+        "metrics":"",
+        "media":[
+        ]
+
+   },
+   {
+    "image-src":"./project-images/hbdex.png",
+    "name":"Healthcare reusable Library (Monorepo)",
+    "role":"Principal Software Engineer (Front-End Team)",
+    "date":"December 2020",
+    "company":"Fidelity Healthcare",
+    "techStack":[
+            {"tooltip":"Javascript","src":"./logos/javascript.png"},
+            {"tooltip":"StencilJS","src":"./logos/stenciljs.png"},
+            {"tooltip":"CSS3","src":"./logos/css3.png"},
+        ],
+    "description":"The Monorepo is a managed library of reusable components powered by storybook where developers can consume as well as publish their web components. ",
+    "problem":"Create a central location for all reusable components where developers can shop for what they need. Allow developers to easily create and publish reusable components to npm artifactory.",
+    "action":"In this project, along with maintaining the infra-structure needed to develop, host and publish components to npm,  I worked closely with developers on standards, reusability and best practices.",
+    "result":"With the reusable monorepo we were able to speed up development by driving reusability and consistency throughout all our products, as well as better manage technical debt through component versioning.",
+    "metrics":"",
+    "media":[
+ 
+    ]
+
+    },
+    {
+        "name":"Accessibility Dashboard",
+        "company":"Fidelity Healthcare",
+        "image-src":"./project-images/accessibility.png",
+        "date":"May 2021",
+        "role":"Principal Software Engineer",
+        "techStack":[
+                {"tooltip":"Javascript","src":"./logos/vuejs.png"},
+                {"tooltip":"Javascript","src":"./logos/javascript.png"},
+                {"tooltip":"CSS3","src":"./logos/html5.png"},
+                {"tooltip":"CSS3","src":"./logos/css3.png"},
+                {"tooltip":"CSS3","src":"./logos/mongodb.png"},
+            ],
+        "description":"A dashboard to run daily accessibility tests and Fidelity Internal Requirement tests against registered apps, displaying the results to the users in an easy to read and well organized manner.",
+        "problem":"Often times teams do not become aware of accessibility issues within their products until users report them, at which point, could be too late. We needed a proactive way to catch these accessibility issues early as part of our shift left strategy",
+        "action":"This was a learning day project where i worked with one other developer every other tuesday on the proof of concept. It became an internal tool where we continued to maintain.",
+        "result":"Early accessibility findings allowed our teams to deliver products that were more accessible from the start. Not having to go back and fix accessibility issues in production environments reduced the number of emergency go-live and code fixes alowing developers to focus on new stories.",
+        "metrics":"",
+        "media":[
+            {src:"project-images/accessibility.png",type:"image", description:"Accessibility Dashboard"},
+        ]
+
+    },
+    {
+    "name":"CSS Playground",
+    "company":"Fidelity Healthcare",
+    "image-src":"./project-images/css-sandbox.png",
+    "date":"January 2023",
+    "role":"Principal Software Engineer",
+    "techStack":[
+        {"tooltip":"Javascript","src":"./logos/vuejs.png"},
+        {"tooltip":"Javascript","src":"./logos/javascript.png"},
+        {"tooltip":"CSS3","src":"./logos/html5.png"},
+        {"tooltip":"CSS3","src":"./logos/css3.png"},
+        {"tooltip":"CSS3","src":"./logos/mongodb.png"},
+        ],
+    "description":"A playground environment (online code compiler) that allowed users to live code and test out their HTML, Javascript and CSS skills, work on challenges and share code snippets inside Fidelity.",
+    "problem":"Due to sensitive data, Fidelity employees are not allowed to store code in online IDEs outside of fidelity servers. This tool was entirely developed and hosted inside Fidelity's system allowing users to quickly prototype and test web components without having to spin up an entire appication.",
+    "action":"Solo developer: This was a side project developed as a learning day initiative. The tool was used in hackathons and onboarding of new developers",
+    "result":"Faster onboarding of new developers into our development standards, design systems and web component libraries.",
+    "metrics":"",
+    "media":[
+
+    ]
+
+},
+    {
+        "name":"FlowGrid - A Standalone grid system and reusable CSS",
+        "company":"Fidelity Healthcare",
+        "image-src":"./project-images/grid-system-0.png",
+        "date":"July 2020 - December 2020",
+        "role":"Principal Software Engineer (Front-End Team)",
+        "techStack":[
+                {"tooltip":"Javascript","src":"./logos/javascript.png"},
+                {"tooltip":"CSS3","src":"./logos/css3.png"},
+            ],
+        "description":"An agnostic plug and play grid system, built with pure javascript and scss created to help front end developers ship out their code with better (and more responsive) user experience. This grid system started out as a one-man passion project and ended up incorporated into Fidelity's official design system.",
+        "problem":"Our development team had a difficult time with creating products that matched what UX designers had in mind. A lot of development time was spend in aligning items on the screen and make things responsive. Also, in trying to create custom css to deliver on UXD requirements, unmanageable source codes and often times unintended side effects would occur.",
+        "action":"During one of our Learning Days at Fidelity, i set out to create a grid system to solve the css and alignment problem for my immedate team. We began using it in the very next development cycle.",
+        "result":"The idea was shared with other teams and the gid system was brought in as part of Fidelity's design system. As a result, developers began to create more readable and intuitive code that was easier to navigate, and quicker to develop.",
+        "metrics":"Development time cut to nearly half allowing teams to deliver nearly double of the number of storypoints in sprints to follow",
+        "media":[
+            {src:"project-images/grid-system-0.png",type:"image", description:"Alignment example"},
+            {src:"project-images/grid-system-01.png",type:"image", description:"Alignment example"},
+            {src:"project-images/grid-system-1.png",type:"image", description:"Alignment example"},
+            {src:"project-images/grid-system-2.png",type:"image", description:"Alignment example"},
+            {src:"project-images/grid-system-3.png",type:"image", description:"Feature example"},
+        ]
+
+   },
+    {
         "name":"Component Library",
         "company":"GE Healthcare, CDx",
         "image-src":"./project-images/component-library.png",

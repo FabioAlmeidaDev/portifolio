@@ -7,7 +7,7 @@ export const CodeFight = (props:any) =>{
     return(
         <div className={classname("codefight-outer-container", props.className)}>
             <div className={classname("codefight-blurp")}>
-                <p>During my time off I like to spend a few minutes (or hours) over at <a href="https://app.codesignal.com/profile/fabioalmeida" target="_blank" className="link">codesignal.com</a> working on my coding skills to stay sharp on my critical thinking while solving real world problems with computer programming. Here are a few of my solutions:</p>
+                <p>During my time off I like to spend a few minutes (or hours) over at <a href="https://app.codesignal.com/profile/fabioalmeida" target="_blank" className="link">codesignal.com</a> and <a href="https://leetcode.com/u/FabioDAlmeida/" target="_blank" className="link">leetCode.com</a> working on my coding skills to stay sharp on my critical thinking while solving real world problems with computer programming. The links above will bring you to my profile and you can check out my rankings there, but if you just want a quick glimpse at how I code, Here are a few of my solutions:</p>
             </div>
 
             <CodeItem title="All Longest Strings" image-src="./codesignal-solutions/longestStrings.png">
